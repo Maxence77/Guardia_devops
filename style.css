@@ -1,4 +1,18 @@
 body
 {
-    background-color: blue;
+    background-image: url(/home/kali/Images/InUZKu.png);
+    color: white;
+}
+h1
+{
+    text-align: center;
+    text-decoration:underline;
+}
+h2
+{
+    margin-bottom:-10px;
+}
+aside
+{
+    margin-left: 5px;
 }
