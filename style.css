@@ -1,12 +1,14 @@
 body
 {
     background-image: url(image.png);
-    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1
 {
     text-align: center;
     text-decoration:underline;
+    color: white;
 }
 h2
 {
@@ -17,9 +19,10 @@ aside
   width: 24%;                /* Fixe la largeur du aside à 80% de la largeur du parent */
   margin: 20px auto;         /* Centre l'aside horizontalement sur la page */
   padding: 5px;             /* Ajoute de l'espace intérieur entre le texte et la bordure */
-  border: 2px solid white; /* Bordure bleue */
+  border: 2px solid white; /* Bordure blanc */
   border-radius: 8px;        /* Coins arrondis */       /* Coins arrondis */
   margin-left: 5px;
+  color: white;
 }
 aside h2
 {
@@ -31,8 +34,9 @@ aside h2
 {
   position: relative;          /* Définit un contexte de positionnement relatif pour les enfants */
   padding: 15px;               /* Ajoute du padding pour espacer le contenu des bords de la section */
-  height: 200px;
+  height: auto;
   margin-top: -500px;
+  color: #3A9FAE;
 }
 .section-1 h2
 {
@@ -41,19 +45,27 @@ aside h2
   left: 50%;                    /* Centre le titre horizontalement */
   transform: translateX(-50%);  /* Ajuste pour que le titre soit parfaitement centré */
   margin: 0;
+  text-decoration: underline;
 }
 
 .section-2
 {
-  text-align: center;          /* Définit un contexte de positionnement relatif pour les enfants */
-  padding: 20px ;               /* Ajoute du padding pour espacer le contenu des bords de la section */
-  height: 200px ;
+  position: relative;
+  padding: 15px;               /* Ajoute du padding pour espacer le contenu des bords de la section */
+  height: auto;
+  margin-top: 50;
 }
 
 .section-2 h2
 
 {
-  margin-top: 100px;
+  position: absolute;          /* Positionne absolument l'élément h2 dans son conteneur */
+  top: 0;                       /* Place le titre en haut du conteneur */
+  left: 50%;                    /* Centre le titre horizontalement */
+  transform: translateX(-50%);  /* Ajuste pour que le titre soit parfaitement centré */
+  margin: 0;
+  color: #3A9FAE;
+  text-decoration: underline;
 }
 
 .section-1 p
@@ -61,4 +73,12 @@ aside h2
   margin-left: 500px;
   margin-top: 45px;
   font-size: 18px;
+}
+
+.section-2 p
+{
+  margin-left: 500px;
+  margin-top: 45px;
+  font-size: 18px;
+  color: #3A9FAE;
 }
